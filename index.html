@@ -5,12 +5,18 @@
 <title>Overlay</title>
 <style>
 body {
-    width: 100%;
-    height: 100%;
+    display: flex;
     margin:0;
     background:transparent;
     overflow:hidden;
 }
+.overlay {
+    position: relative;
+    aspect-ratio: 16/9;
+    width: 100;
+    height: 1920px;
+}
+    
 iframe {
     position:absolute;
     border:none;
@@ -42,11 +48,11 @@ iframe {
 </style>
 </head>
 <body>
-
+ <div class="overlay">
 <iframe id="Saweria-Goal" src="https://saweria.co/widgets/milestone?streamKey=e738c31afc64e166ce95288acb1b43e4"></iframe>
 <iframe id="chat" src="https://tikfinity.zerody.one/widget/chat?cid=2899443"></iframe>
 <iframe id="alert" src="https://saweria.co/widgets/mediashare?streamKey=e738c31afc64e166ce95288acb1b43e4"></iframe>
 <iframe id="goal" src="https://tikfinity.zerody.one/widget/goal?cid=2899443&metric=likes"></iframe>
-
+ </div>
 </body>
 </html>
